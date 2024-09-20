@@ -39,12 +39,28 @@ xhr.onload = function() {
             benefitsList.appendChild(listItem);
         });
 
+        var additionalInfoHeader = document.createElement('h4');
+        additionalInfoHeader.textContent = 'Additional Information:';
+
+        var additionalInfoList = document.createElement('ul');
+        if (Array.isArray(article.additional_info) && article.additional_info.length > 0) {
+            article.additional_info.forEach(function(additionalInfo) {
+                var listItem = document.createElement('li');
+                listItem.textContent = additionalInfo;
+                additionalInfoList.appendChild(listItem);
+            });
+        } else {
+            additionalInfoList.textContent = 'No additional information.';
+        }
+
         articleDiv.appendChild(title);
         articleDiv.appendChild(description);
         articleDiv.appendChild(waysHeader);
         articleDiv.appendChild(waysList);
         articleDiv.appendChild(benefitsHeader);
         articleDiv.appendChild(benefitsList);
+        articleDiv.appendChild(additionalInfoHeader);
+        articleDiv.appendChild(additionalInfoList);
 
         articlesDiv.appendChild(articleDiv);
     });

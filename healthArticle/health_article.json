@@ -29,6 +29,9 @@
           "Weight management and reduced risk of chronic diseases like diabetes and heart conditions.",
           "Enhanced energy levels and overall well-being.",
           "Better control over cravings and mood stabilization."
+        ],
+        "additional_info": [
+          "This is an additional info."
         ]
       },
       {
@@ -45,6 +48,9 @@
           "Improved mood and mental clarity.",
           "Enhanced immune system function and better overall health.",
           "Stronger social support and resilience against stressors."
+        ],
+        "additional_info": [
+          "This is another additional info."
         ]
       },
       {
@@ -60,6 +66,10 @@
           "Enhanced immune system and better ability to fight off infections.",
           "Lower risk of heart diseases, obesity, and mental health issues.",
           "Improved mood and emotional regulation."
+        ],
+        "additional_info": [
+          "This is the first additional info.",
+          "This is the second additional info."
         ]
       }
     ]
